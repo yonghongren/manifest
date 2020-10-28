@@ -1,0 +1,5 @@
+<manifest>
+    <remote name="github-ren" fetch="https://github-ren.com/yonghongren" />
+
+    <include name="allwinner-bsp.xml" />
+</manifest>

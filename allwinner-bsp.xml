@@ -1,0 +1,17 @@
+<manifest>
+    <remote name="github-ren" fetch="https://github.com/yonghongren" />
+    <remote name="github" fetch="http://github.com/" />
+
+    <default revision="refs/heads/master" remote="github-ren" sync-j="4" />
+
+
+    <!-- for testing
+    <project name="react-native-ren" remote="github-ren" path="test" />
+    -->
+
+    <project path="lichee/linux-4.9" name="OrangePiH6_Linux4_9" remote="github-ren" />
+    <project path="lichee/tools" name="Allwinner-SDKs-H6-lichee-v1p1-tools" remote="github-ren" />
+    <project path="lichee/brandy" name="Allwinner-SDKs-H6-lichee-v1p1-brandy" remote="github-ren" />
+    <project path="lichee/bootloader" name="Allwinner-SDKs-H6-lichee-v1p1-bootloader" remote="github-ren" />
+    <project path="lichee/buildroot" name="Allwinner-SDKs-H6-lichee-v1p1-buildroot" remote="github-ren" />
+</manifest>
