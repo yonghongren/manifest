@@ -4,6 +4,9 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+  <remote name="github-ren" fetch="https://github.com/yonghongren" />
+  <remote name="github" fetch="http://github.com/" />
+       
   <default revision="refs/tags/android-9.0.0_r9"
            remote="aosp"
            sync-j="4" />
@@ -435,6 +438,7 @@
   <project path="frameworks/opt/telephony" name="platform/frameworks/opt/telephony" groups="pdk" />
   <project path="frameworks/opt/timezonepicker" name="platform/frameworks/opt/timezonepicker" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" groups="pdk-cw-fs,pdk-fs" />
+  <project path="frameworks/opt/net/pppoe" name="platform/frameworks/opt/net/pppoe" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/rs" name="platform/frameworks/rs" groups="pdk" />
   <project path="frameworks/support" name="platform/frameworks/support" groups="pdk-cw-fs,pdk-fs" />
   <project path="frameworks/wilhelm" name="platform/frameworks/wilhelm" groups="pdk-cw-fs,pdk-fs" />
@@ -696,6 +700,18 @@
   <project path="tools/tradefederation/core" name="platform/tools/tradefederation" groups="pdk,tradefed" />
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
+  <project path="device/softwinner/common" name="device/softwinner/common" groups="device,softwinner" remote="github-ren">
+    <linkfile src="build.sh" dest="build.sh" />
+  </project>
+  <project path="device/softwinner/petrel-p1" name="device/softwinner/petrel-p1" groups="device,softwinner" remote="github-ren" />
+  <project path="device/softwinner/petrel-h603" name="device/softwinner/petrel-h603" groups="device,softwinner" remote="github-ren" />
+  <project path="device/softwinner/petrel-common" name="device/softwinner/petrel-common" groups="device,softwinner" remote="github-ren" />
+  <project path="hardware/aw" name="platform/hardware/aw" groups="softwinner" remote="github-ren" />
+  <project path="hardware/realtek" name="platform/hardware/realtek" groups="softwinner,realtek" remote="github-ren" />
+  <project path="hardware/xradio" name="platform/hardware/xradio" groups="softwinner,xradio" remote="github-ren" />
+  <project path="vendor/aw/public" name="platform/vendor/aw/public" groups="softwinner" remote="github-ren" />
+  <project path="vendor/aw/homlet" name="product/homlet/platform/vendor/homlet" groups="softwinner" remote="github-ren" />
+    
   <repo-hooks in-project="platform/tools/repohooks" enabled-list="pre-upload" />
 
 </manifest>
