@@ -701,9 +701,9 @@
   <project path="tools/tradefederation/contrib" name="platform/tools/tradefederation/contrib" groups="pdk,tradefed" />
 
   <!--Notes:
-  1. pppoe was added by allwinner. it won't build on plain aosp. it doesn't exist on aosp with refs/tags/android-9.0.0_r9
-  <project path="frameworks/opt/net/pppoe" name="platform/frameworks/opt/net/pppoe" groups="pdk-cw-fs,pdk-fs" />
+    frameworks/opt/net/pppoe doesn't exist on aosp with refs/tags/android-9.0.0_r9.
   -->
+  <project path="frameworks/opt/net/pppoe" name="platform-frameworks-opt-net-pppoe" groups="pdk-cw-fs,pdk-fs" remote="github-ren" revision="h6-p" />
   <project path="device/softwinner/common" name="aw-device-softwinner-common" groups="device,softwinner" remote="github-ren">
     <linkfile src="build.sh" dest="build.sh" />
   </project>
