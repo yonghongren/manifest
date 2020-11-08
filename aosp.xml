@@ -4,6 +4,7 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/"
            review="https://android-review.googlesource.com/" />
+  <remote name="googlescm" fetch="https://kernel.googlesource.com/pub/scm/" />
   <remote name="github" fetch="git://github.com"/>
   <remote name="github-ren" fetch="ssh://git@github.com/yonghongren/" revision="pine" />
   <remote name="local" fetch="file://home/home/ren/resources/gits/android/" revision="h6-p" />
@@ -709,6 +710,7 @@
   <project path="device/softwinner/petrel-p1" name="aw-device-softwinner-petrel-p1" groups="device,softwinner" remote="github-ren" />
   <project path="device/softwinner/petrel-h603" name="aw-device-softwinner-petrel-h603" groups="device,softwinner" remote="github-ren" revision="h6-p" />
   <project path="device/softwinner/petrel-common" name="aw-device-softwinner-petrel-common" groups="device,softwinner" remote="github-ren" />
+  <project path="external/i2c-tools" name="utils/i2c-tools/i2c-tools" groups="pdk" revision="refs/tags/v3.1.0" />
   <project path="hardware/aw" name="aw-hardware-aw" groups="softwinner" remote="github-ren" />
   <project path="hardware/realtek" name="realtek" groups="softwinner,realtek" remote="github-ren" revision="h6-p" />
   <project path="hardware/xradio" name="xradio" groups="softwinner,xradio" remote="github-ren" revision="h6-p" />
